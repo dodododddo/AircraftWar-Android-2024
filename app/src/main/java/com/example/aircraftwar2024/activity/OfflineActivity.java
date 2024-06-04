@@ -17,6 +17,7 @@ public class OfflineActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActivityManager.addActivity(this);
         setContentView(R.layout.activity_offline);
 
         if(getIntent() != null){
